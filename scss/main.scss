@@ -1,16 +1,86 @@
-div {
-  font-family: sans-serif;
+$blue: #0000d1;
+$blue-muted: #6060d1;
+$green: #3ec93a;
 
-  h1 {
-   color: red; 
-  }
+$logo-height: 250px;
+$logo-aspect-ratio: 0.770673813;
+$logo-width: $logo-height * $logo-aspect-ratio;
+$navbar-height: 50px;
 
-  p {
-    color: black;
-  }
+body {
+  font-family: 'Open Sans' sans-serif;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
 
   a {
-    color: blue;
+    text-decoration: none;
   }
 
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  height: $logo-height - $navbar-height / 2;
+  
+  .logo {
+    height: $logo-height;
+    margin: 10px 0 0 10px;
+    position: absolute;
+  }
+
+  .header-info {
+    position: relative;
+    left: $logo-width - $logo-width * 0.25;
+    top: $logo-height * 0.1;
+  }
+
+  h1, h2 {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .title {
+    color: $blue;
+    font-size: 2em;
+  }
+
+  .tagline {
+    color: $green;
+    font-style: italic;
+    font-size: 1.5em;
+  }
+
+  .phone-number {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+
+}
+
+nav {
+  width: 100%;
+  height: $navbar-height;
+  background-color: $blue;
+  line-height: 50px;
+
+  ul {
+    list-style: none;
+    margin: 0 0 0 $logo-width;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 40px;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  a, a:link a:visited {
+    color: white;
+  }
 }
