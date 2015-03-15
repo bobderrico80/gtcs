@@ -2,7 +2,7 @@
   "name": "Green_Team_Cleanout_Services_Wordpress_Theme",
   "version": "1.0.0",
   "description": "Brochure site for Green Team Cleanout Services",
-  "main": "index.html",
+  "main": "index.php",
   "dependencies": {
     "gulp": "~3.8.11",
     "normalize.css": "~3.0.2",
