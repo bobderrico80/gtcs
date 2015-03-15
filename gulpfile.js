@@ -18,6 +18,13 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css/'));
 });
 
+gulp.task('normalize', function () {
+  return gulp.src('./node_modules/normalize.css/normalize.css')
+    .pipe(minifyCSS())
+    .pipe(rename({ extname : '.min.css'} ))
+    .pipe(gulp.dest('./css/'));
+})
+
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
 });
