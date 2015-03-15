@@ -19,5 +19,8 @@
   "license": "Copyright 2015 by Green Team Cleanout Services/Bob D'Errico. All Rights Reserved.",
   "bugs": {
     "url": "https://github.com/bobderrico80/gtcs/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "~2.2.4"
   }
 }
