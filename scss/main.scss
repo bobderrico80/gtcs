@@ -1,17 +1,22 @@
 $blue: #0000d1;
-$blue-muted: #6060d1;
 $green: #3ec93a;
-
+$green-dark: #2E8E2B;
+$blue-dark: #040486;
 $logo-height: 250px;
 $logo-aspect-ratio: 0.770673813;
 $logo-width: $logo-height * $logo-aspect-ratio;
 $navbar-height: 50px;
+
+html, body, main, .slideshow-container {
+  height: 100%;
+}
 
 body {
   font-family: 'Open Sans' sans-serif;
   position: relative;
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
 
   a {
     text-decoration: none;
@@ -47,7 +52,7 @@ header {
 
   .title {
     color: $blue;
-    font-size: 2em;
+    font-size: 2.25em;
   }
 
   .tagline {
@@ -58,7 +63,7 @@ header {
 
   .phone-number {
     margin-top: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
 }
@@ -107,5 +112,50 @@ footer {
   a, a:link, a:visited {
     text-decoration: underline;
     color: white;
+  }
+}
+
+.slideshow-container {
+  background-color: white;
+
+  h2 {
+    color: $blue-dark;
+    font-size: 2em;
+  }
+
+  h1 {
+    color: $green-dark;
+    font-size: 4em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+.slideshow-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.7);
+  padding: 50px;
+}
+.slideshow {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  &.inactive {
+    display: none;
   }
 }

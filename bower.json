@@ -1,0 +1,20 @@
+{
+  "name": "Green Team Cleanout Services",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bobderrico80/gtcs",
+  "authors": [
+    "Bob D'Errico <bob@bobderrico.com>"
+  ],
+  "main": "index.php",
+  "license": "Copyright 2015 Green Team Cleanout Services. All Rights Reserved",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
