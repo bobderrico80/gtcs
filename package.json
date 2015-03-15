@@ -1,0 +1,23 @@
+{
+  "name": "Green_Team_Cleanout_Services_Wordpress_Theme",
+  "version": "1.0.0",
+  "description": "Brochure site for Green Team Cleanout Services",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "~3.8.11",
+    "normalize.css": "~3.0.2",
+    "gulp-minify-css": "~1.0.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-sass": "~1.3.3",
+    "node-sass": "~3.0.0-pre"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobderrico80/gtcs.git"
+  },
+  "author": "Bob D'Errico",
+  "license": "Copyright 2015 by Green Team Cleanout Services/Bob D'Errico. All Rights Reserved.",
+  "bugs": {
+    "url": "https://github.com/bobderrico80/gtcs/issues"
+  }
+}
